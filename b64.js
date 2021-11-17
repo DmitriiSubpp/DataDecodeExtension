@@ -1,12 +1,18 @@
-let plaintext = document.getElementById('pl');
-let b64       = document.getElementById('base64');
-let res_b64   = document.getElementById('b64Result');
-let res_pt    = document.getElementById('ptResult');
+'use strict'
 
-plaintext.oninput = function(){
-    res_b64.innerHTML = btoa(plaintext.value);
+let encodeBtn = document.getElementById('encodeBtn');
+let decodeBtn = document.getElementById('decodeBtn');
+
+encodeBtn.onclick = function() {
+  let text_input  = document.getElementById('inp');
+  let text_result = document.getElementById('res');
+  if (text_input.value) {  text_result.innerHTML = btoa(text_input.value); }
+  else { text_result.innerHTML = 'NULL'; }
 }
 
-b64.oninput = function(){
-    res_pt.innerHTML = atob(b64.value);
+decodeBtn.onclick = function() {
+  let text_input  = document.getElementById('inp');
+  let text_result = document.getElementById('res');
+  if (text_input.value) {  text_result.innerHTML = atob(text_input.value); }
+  else { text_result.innerHTML = 'NULL'; }
 }
