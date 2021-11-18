@@ -2,8 +2,9 @@ body {
   display: flex;
   background-color: lightblue;
   background-image: url(img/gradient.jpg);
-  height: 300px;
-  width: 300px;
+  background-position: center;
+  height: 350px;
+  width: 320px;
   flex-direction: column;
 
 }
@@ -21,6 +22,9 @@ header {
   height: 50px;
   background-color: white;
 
+  color: #E02463;
+  font-size: 20px;
+  font-family: 'Jomhuria';
 }
 
 .logo {
@@ -43,10 +47,16 @@ nav {
 }
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.encodeButton, .decodeButton {
+.footer_buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.encodeButton, .decodeButton, .clearButton, .copyButton {
   appearance: none;
   min-width: 100px;
   border: 0;
@@ -55,19 +65,34 @@ nav {
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  background-color: #FB8A1D;
 }
+
+.replaceButton {
+  appearance: none;
+  min-width: 50px;
+  border: 0;
+  border-radius: 5px;
+  background: #22C2F0;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
 
 textarea {
   margin-top: 10px;
   border: 0;
   border-radius: 5px;
-  background: #61B7CF;
-  color: #fff;
+  background: #22C2F0;
   padding: 8px 16px;
-
+  color: white;
+  font-weight: bolder;
 }
 
-.encodeButton:hover, .decodeButton:hover {
-  background: #1d49aa;
+.encodeButton:hover, .decodeButton:hover, .replaceButton:hover, .clearButton:hover, .copyButton:hover {
+  background: #8355FA;
 }

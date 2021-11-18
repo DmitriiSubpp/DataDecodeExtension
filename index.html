@@ -1,19 +1,28 @@
 <!doctype html>
 <html>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
   <body>
     <header>
       <div class='logo'></div>
-      <div class='name'>base64 by dsub</div>
+      <div class='name'>0.2</div>
     </header>
     <nav>
       <div class='buttons'>
-        <button id='encodeBtn' class="encodeButton" type="button">Encode</button>
-        <button id='decodeBtn' class="decodeButton" type="button">Decode</button>
+        <button id='encodeBtn' class="encodeButton" type="button">Encode!</button>
+        <button id='replaceBtn' class="replaceButton" type="button"><i class="fas fa-retweet"></i></button>
+        <button id='decodeBtn' class="decodeButton" type="button">Decode!</button>
       </div>
       <textarea  name='plaintext' rows=2 cols='30' id='inp'></textarea>
       <textarea  name='base64' rows=2 cols='30' id='res'></textarea>
+      <div class='footer_buttons'>
+        <button id='clearBtn' class="clearButton" type="button">Clear</button>
+        <button id='copyBtn' class="copyButton" type="button">Copy</button>
+      </div>
     </nav>
     <script src="b64.js"></script>
 
