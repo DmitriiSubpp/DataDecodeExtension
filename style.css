@@ -1,98 +1,135 @@
 body {
   display: flex;
+  flex-direction: column;
+
   background-color: lightblue;
   background-image: url(img/gradient.jpg);
   background-position: center;
+
   height: 350px;
   width: 320px;
-  flex-direction: column;
-
 }
 
 header {
-  text-align: center;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+
+  background-color: white;
+  color: #E02463;
+
+  padding: 10px;
   border: 0;
   border-radius: 5px;
-  height: 50px;
-  background-color: white;
 
-  color: #E02463;
+  text-align: center;
   font-size: 20px;
   font-family: 'Jomhuria';
+
+  height: 50px;
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
   background-color: lightblue;
   background-image: url(img/icon_512.png);
   background-size: cover;
+
+  height: 40px;
+  width: 40px;
+}
+
+#menu {
+  background-color: #DF2362;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  text-align: center;
+
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: solid 1px #FB8A1D;
+
+  min-width: 100px;
 }
 
 nav {
-  padding: 10px;
-  margin-top: 20px;
-  background-color: white;
-  border: 0;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  padding: 10px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 5px;
+
+  background-color: white;
 }
+
 .buttons {
   display: flex;
   justify-content: space-between;
 }
 
 .footer_buttons {
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
+
+  margin-top: 10px;
 }
 
 .encodeButton, .decodeButton, .clearButton, .copyButton {
   appearance: none;
-  min-width: 100px;
-  border: 0;
-  border-radius: 5px;
-  background: #39AECF;
+  cursor: pointer;
+
+  background-color: #FB8A1D;
   color: #fff;
-  padding: 8px 16px;
+
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
-  background-color: #FB8A1D;
+
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 16px;
+
+  min-width: 100px;
 }
 
 .replaceButton {
   appearance: none;
-  min-width: 50px;
+  cursor: pointer;
+
+  color: white;
+  background: #22C2F0;
+
   border: 0;
   border-radius: 5px;
-  background: #22C2F0;
   padding: 8px 16px;
+
   font-size: 16px;
-  cursor: pointer;
-  color: white;
+
+  min-width: 50px;
 }
 
 
 textarea {
+  background: #22C2F0;
+  color: white;
+
   margin-top: 10px;
   border: 0;
   border-radius: 5px;
-  background: #22C2F0;
   padding: 8px 16px;
-  color: white;
+
   font-weight: bolder;
 }
 
 .encodeButton:hover, .decodeButton:hover, .replaceButton:hover, .clearButton:hover, .copyButton:hover {
   background: #8355FA;
+}
+
+#menu::after {
+  background-color: #fff;
 }
